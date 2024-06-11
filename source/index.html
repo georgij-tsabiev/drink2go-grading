@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header" data-test="header">
       <div class="container">
         <a class="logo" href="index.html">
           <img class="logo__image" src="#" width="32" height="36" alt="Логотип Drink2Go.">
@@ -28,6 +28,74 @@
       </div>
     </header>
     <main class="page__main">
+      <section class="hero" data-test="hero">
+        <div class="container">
+          <h1 class="visually-hidden">Drink2Go — интернет-магазин по продаже кофейных напитков.</h1>
+          <div class="slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <div class="slider__image-wrapper">
+                  <img class="slider__image" src="#" width="280" height="280" alt="Банка кофе Декаф Флэт Уайт.">
+                </div>
+                <div class="slider__description">
+                  <span class="slider__badge badge">Новинка!</span>
+                  <h2 class="slider__title">Декаф Флэт Уайт</h2>
+                  <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком — то, что нужно
+                    для расслабления после тяжёлого рабочего дня</p>
+                  <div class="buy-wrapper">
+                    <span class="old-price">295₽</span>
+                    <span class="current-price">225₽</span>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__item">
+                <div class="slider__image-wrapper">
+                  <img class="slider__image" src="#" width="280" height="280" alt="Банка кофе Лавандовый Латте.">
+                </div>
+                <div class="slider__description">
+                  <span class="slider__badge badge">Новинка!</span>
+                  <h2 class="slider__title">Лавандовый Латте</h2>
+                  <p class="slider__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                  <div class="buy-wrapper">
+                    <span class="old-price">285₽</span>
+                    <span class="current-price">265₽</span>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__item">
+                <div class="slider__image-wrapper">
+                  <img class="slider__image" src="#" width="280" height="280" alt="Банка кофе Тройной Эспрессо.">
+                </div>
+                <div class="slider__description">
+                  <span class="slider__badge badge">Новинка!</span>
+                  <h2 class="slider__title">Тройной Эспрессо</h2>
+                  <p class="slider__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                  <div class="buy-wrapper">
+                    <span class="old-price">395₽</span>
+                    <span class="current-price">375₽</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="slider__buttons">
+              <button class="slider__button slider__button--prev" type="button" aria-label="Показать предыдущий товар."></button>
+              <button class="slider__button slider__button--next" type="button" aria-label="Показать следующий товар."></button>
+            </div>
+            <ul class="slider-pagination reset-list">
+              <li class="slider-pagination__item">
+                <button class="slider-pagination__button slider-pagination__button--current" type="button" aria-label="Первый товар слайдера."></button>
+              </li>
+              <li class="slider-pagination__item">
+                <button class="slider-pagination__button" type="button" aria-label="Второй товар слайдера."></button>
+              </li>
+              <li class="slider-pagination__item">
+                <button class="slider-pagination__button" type="button" aria-label="Третий товар слайдера."></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
     </main>
     <footer class="footer">

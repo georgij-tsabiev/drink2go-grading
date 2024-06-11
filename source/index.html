@@ -122,6 +122,195 @@
           </ul>
         </div>
       </section>
+      <section class="catalog">
+        <div class="container">
+          <span class="badge">Каталог</span>
+          <h2 class="catalog__title title">Каталог кофейных напитков</h2>
+          <div class="filter">
+            <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="filter__group">
+                <legend class="filter__title">Цена</legend>
+                <div class="range">
+                  <button class="range__toggle range__toggle--min" type="button" aria-label="Изменить минимальную цену."></button>
+                  <button class="range__toggle range__toggle--max" type="button" aria-label="Изменить максимальную цену."></button>
+                  <div class="range__fields">
+                    <label for="min-price">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </label>
+                    <input class="range__field" type="text" id="min-price" name="min-price" placeholder="0" required>
+                    <label for="max-price">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </label>
+                    <input class="range__field" type="text" id="max-price" name="max-price" placeholder="500" value="900" required>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="filter__group">
+                <legend class="filter__title">Наличие молока</legend>
+                <ul class="filter__radio-list radio-list reset-list">
+                  <li class="radio-list__item">
+                    <label class="radio-list__control control">
+                      <input class="radio-list__field visually-hidden" type="radio" name="presence-of-milk" value="not-important" checked="checked">
+                      <span class="control__outline radio-list__outline"></span>
+                      Неважно
+                    </label>
+                  </li>
+                  <li class="radio-list__item">
+                    <label class="radio-list__control control">
+                      <input class="radio-list__field visually-hidden" type="radio" name="presence-of-milk" value="only-animal">
+                      <span class="control__outline radio-list__outline"></span>
+                      Только животное
+                    </label>
+                  </li>
+                  <li class="radio-list__item">
+                    <label class="radio-list__control control">
+                      <input class="radio-list__field visually-hidden" type="radio" name="presence-of-milk" value="only-plant">
+                      <span class="control__outline radio-list__outline"></span>
+                      Только растительное
+                    </label>
+                  </li>
+                  <li class="radio-list__item">
+                    <label class="radio-list__control control">
+                      <input class="radio-list__field visually-hidden" type="radio" name="presence-of-milk" value="no-milk" disabled>
+                      <span class="control__outline radio-list__outline"></span>
+                      Без молока
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter__group">
+                <legend class="filter__title">Страна произрастания</legend>
+                <ul class="filter__checkbox-list checkbox-list reset-list">
+                  <li class="checkbox-list__item">
+                    <label class="checkbox-list__control control">
+                      <input type="checkbox" name="country-of-origin" value="brazil" checked>
+                      <span class="control__outline visually-hidden"></span>
+                      Бразилия
+                    </label>
+                  </li>
+                  <li class="checkbox-list__item">
+                    <label class="checkbox-list__control control">
+                      <input type="checkbox" name="country-of-origin" value="ethiopia">
+                      <span class="control__outline visually-hidden"></span>
+                      Эфиопия
+                    </label>
+                  </li>
+                  <li class="checkbox-list__item">
+                    <label class="checkbox-list__control control">
+                      <input type="checkbox" name="country-of-origin" value="columbia">
+                      <span class="control__outline visually-hidden"></span>
+                      Колумбия
+                    </label>
+                  </li>
+                  <li class="checkbox-list__item">
+                    <label class="checkbox-list__control control">
+                      <input type="checkbox" name="country-of-origin" value="costa-rica">
+                      <span class="control__outline visually-hidden"></span>
+                      Коста-Рика
+                    </label>
+                  </li>
+                  <li class="checkbox-list__item">
+                    <label class="checkbox-list__control control">
+                      <input type="checkbox" name="country-of-origin" value="peru" disabled>
+                      <span class="control__outline visually-hidden"></span>
+                      Перу
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="filter__apply button" type="submit">Применить</button>
+              <button class="filter__reset button" type="reset">Сбросить</button>
+            </form>
+          </div>
+          <div class="catalog__wrapper">
+            <div class="sorting">
+              <h3 class="sorting__title">Сортировка:</h3>
+              <select class="sorting__select" name="sorting">
+                <option value="default">По умолчанию</option>
+                <option value="novelty">Новинки</option>
+                <option value="discounted">Со скидкой</option>
+              </select>
+            </div>
+            <ul class="catalog__list">
+              <li class="card">
+                <a class="card__link" href="#">
+                  <img src="#" width="130" height="188" alt="Банка кофе Декаф Флэт Уайт.">
+                </a>
+                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <p class="card__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <span class="current-price">225₽</span>
+                <button class="card__button button" type="button">В корзину</button>
+              </li>
+              <li class="card">
+                <a class="card__link" href="#">
+                  <img src="#" width="130" height="188" alt="Банка кофе Декаф Флэт Уайт.">
+                </a>
+                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <p class="card__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <span class="current-price">225₽</span>
+                <button class="card__button button" type="button">В корзину</button>
+              </li>
+              <li class="card">
+                <a class="card__link" href="#">
+                  <img src="#" width="130" height="188" alt="Банка кофе Декаф Флэт Уайт.">
+                </a>
+                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <p class="card__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <span class="current-price">225₽</span>
+                <button class="card__button button" type="button">В корзину</button>
+              </li>
+              <li class="card">
+                <a class="card__link" href="#">
+                  <img src="#" width="130" height="188" alt="Банка кофе Декаф Флэт Уайт.">
+                </a>
+                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <p class="card__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <span class="current-price">225₽</span>
+                <button class="card__button button" type="button">В корзину</button>
+              </li>
+              <li class="card">
+                <a class="card__link" href="#">
+                  <img src="#" width="130" height="188" alt="Банка кофе Декаф Флэт Уайт.">
+                </a>
+                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <p class="card__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <span class="current-price">225₽</span>
+                <button class="card__button button" type="button">В корзину</button>
+              </li>
+              <li class="card">
+                <a class="card__link" href="#">
+                  <img src="#" width="130" height="188" alt="Банка кофе Декаф Флэт Уайт.">
+                </a>
+                <a class="card__name" href="#">Декаф Флэт Уайт</a>
+                <p class="card__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <span class="current-price">225₽</span>
+                <button class="card__button button" type="button">В корзину</button>
+              </li>
+            </ul>
+            <div class="pagination">
+              <a class="pagination__prev" href="#">Назад</a>
+              <ul class="pagination__list reset-list">
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--current" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+              </ul>
+              <a class="pagination-next" href="#">Вперёд</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
     <footer class="footer">

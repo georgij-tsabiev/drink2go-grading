@@ -1,7 +1,25 @@
 .cart-button {
+  position: relative;
   width: 60px;
   height: 60px;
   display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("../../icons/stack.svg#cart-icon");
+    background-repeat: no-repeat;
+    background-color: $base-dark;
+  }
+
+  &:hover::before {
+    background-color: $base-primary;
+  }
 }
 
 .cart-button__text {

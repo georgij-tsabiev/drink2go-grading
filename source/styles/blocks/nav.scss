@@ -1,5 +1,7 @@
 .nav {
   margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .nav__menu {
@@ -7,7 +9,25 @@
 }
 
 .nav__toggle {
+  position: relative;
   width: 60px;
   height: 60px;
   display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $base-dark;
+    mask-image: url("../../icons/stack.svg#burger-icon");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    background-color: $base-secondary;
+  }
 }

@@ -1,6 +1,7 @@
 .button {
-  font-family: $font-family;
+  padding: 0;
   border: 0;
+  font-family: $font-family;
+  background-color: transparent;
   cursor: pointer;
-  color: $base-dark;
 }

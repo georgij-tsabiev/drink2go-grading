@@ -1,5 +1,8 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: $base-white;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }

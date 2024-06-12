@@ -20,6 +20,10 @@
 
 .nav__buttons {
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
 }
 
 .nav__link {

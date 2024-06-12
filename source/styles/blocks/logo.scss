@@ -4,10 +4,24 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    padding: 22px 20px;
+    padding: 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 }
 
 .logo__text {
   display: none;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $base-dark;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 126px;
+  }
 }

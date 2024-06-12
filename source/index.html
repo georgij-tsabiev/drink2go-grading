@@ -38,10 +38,17 @@
         <div class="container">
           <h1 class="visually-hidden">Drink2Go — интернет-магазин по продаже кофейных напитков.</h1>
           <div class="slider">
-            <ul class="slider__list">
+            <ul class="slider__list reset-list">
               <li class="slider__item">
                 <div class="slider__image-wrapper">
-                  <img class="slider__image" src="#" width="280" height="280" alt="Банка кофе Декаф Флэт Уайт.">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="images/decaf-flat-white-desktop@1x.webp 1x, images/decaf-flat-white-desktop@2x.webp 2x" width="600" height="600">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/decaf-flat-white-tablet@1x.webp 1x, images/decaf-flat-white-tablet@2x.webp 2x" width="476" height="476">
+                    <source type="image/webp" srcset="images/decaf-flat-white-mobile@1x.webp 1x, images/decaf-flat-white-mobile@2x.webp 2x" width="280" height="280">
+                    <source type="image/png" media="(min-width: 1440px)" srcset="images/decaf-flat-white-desktop@1x.png, images/decaf-flat-white-desktop@2x.png 2x" width="600" height="600">
+                    <source type="image/png" media="(min-width: 768px)" srcset="images/decaf-flat-white-tablet@1x.png, images/decaf-flat-white-tablet@2x.png 2x" width="476" height="476">
+                    <img class="slider__image" src="images/decaf-flat-white-mobile@1x.png" srcset="images/decaf-flat-white-mobile@2x.png 2x" width="280" height="280" alt="Банка кофе Декаф Флэт Уайт.">
+                  </picture>
                 </div>
                 <div class="slider__description">
                   <span class="slider__badge badge">Новинка!</span>
@@ -52,12 +59,20 @@
                   <div class="buy-wrapper">
                     <span class="old-price">295₽</span>
                     <span class="current-price">225₽</span>
+                    <a class="slider__order-button button button--main" href="#">Заказать</a>
                   </div>
                 </div>
               </li>
               <li class="slider__item">
                 <div class="slider__image-wrapper">
-                  <img class="slider__image" src="#" width="280" height="280" alt="Банка кофе Лавандовый Латте.">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="images/lavender-latte-desktop@1x.webp 1x, images/lavender-latte-desktop@2x.webp 2x" width="600" height="600">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/lavender-latte-tablet@1x.webp 1x, images/lavender-latte-tablet@2x.webp 2x" width="476" height="476">
+                    <source type="image/webp" srcset="images/lavender-latte-mobile@1x.webp 1x, images/lavender-latte-mobile@2x.webp 2x" width="280" height="280">
+                    <source type="image/png" media="(min-width: 1440px)" srcset="images/lavender-latte-desktop@1x.png, images/lavender-latte-desktop@2x.png 2x" width="600" height="600">
+                    <source type="image/png" media="(min-width: 768px)" srcset="images/lavender-latte-tablet@1x.png, images/lavender-latte-tablet@2x.png 2x" width="476" height="476">
+                    <img class="slider__image" src="images/lavender-latte-mobile@1x.png" srcset="images/lavender-latte-mobile@2x.png 2x" width="280" height="280" alt="Банка кофе Лавандовый Латте.">
+                  </picture>
                 </div>
                 <div class="slider__description">
                   <span class="slider__badge badge">Новинка!</span>
@@ -71,7 +86,14 @@
               </li>
               <li class="slider__item">
                 <div class="slider__image-wrapper">
-                  <img class="slider__image" src="#" width="280" height="280" alt="Банка кофе Тройной Эспрессо.">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="images/triple-espresso-desktop@1x.webp 1x, images/triple-espresso-desktop@2x.webp 2x" width="600" height="600">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/triple-espresso-tablet@1x.webp 1x, images/triple-espresso-tablet@2x.webp 2x" width="476" height="476">
+                    <source type="image/webp" srcset="images/triple-espresso-mobile@1x.webp 1x, images/triple-espresso-mobile@2x.webp 2x" width="280" height="280">
+                    <source type="image/png" media="(min-width: 1440px)" srcset="images/triple-espresso-desktop@1x.png, images/triple-espresso-desktop@2x.png 2x" width="600" height="600">
+                    <source type="image/png" media="(min-width: 768px)" srcset="images/triple-espresso-tablet@1x.png, images/triple-espresso-tablet@2x.png 2x" width="476" height="476">
+                    <img class="slider__image" src="images/triple-espresso-mobile@1x.png" srcset="images/triple-espresso-mobile@2x.png 2x" width="280" height="280" alt="Банка кофе Тройной Эспрессо.">
+                  </picture>
                 </div>
                 <div class="slider__description">
                   <span class="slider__badge badge">Новинка!</span>
@@ -84,10 +106,8 @@
                 </div>
               </li>
             </ul>
-            <div class="slider__buttons">
-              <button class="slider__button slider__button--prev" type="button" aria-label="Показать предыдущий товар."></button>
-              <button class="slider__button slider__button--next" type="button" aria-label="Показать следующий товар."></button>
-            </div>
+            <button class="slider__button button slider__button--prev" type="button" aria-label="Показать предыдущий товар."></button>
+            <button class="slider__button button slider__button--next" type="button" aria-label="Показать следующий товар."></button>
             <ul class="slider-pagination reset-list">
               <li class="slider-pagination__item">
                 <button class="slider-pagination__button slider-pagination__button--current" type="button" aria-label="Первый товар слайдера."></button>
@@ -106,7 +126,7 @@
         <div class="container">
           <span class="badge">Преимущества</span>
           <h2 class="features__title title">Главные причины выбрать Drink2Go</h2>
-          <ul class="features__list">
+          <ul class="features__list reset-list">
             <li class="features__item features__item--speed">
               <h3 class="features__title">Скорость</h3>
               <p class="features__text">Готовый напиток всегда под рукой — просто открой банку</p>
@@ -237,7 +257,7 @@
                 <option value="discounted">Со скидкой</option>
               </select>
             </div>
-            <ul class="catalog__list">
+            <ul class="catalog__list reset-list">
               <li class="card">
                 <a class="card__link" href="#">
                   <img class="card__image" src="#" width="130" height="188" alt="Банка кофе Декаф Флэт Уайт.">
@@ -329,7 +349,7 @@
             <img class="logo__image" src="#" width="82" height="36" alt="Логотип Drink2Go.">
             <span class="logo__text">Интернет-магазин кофейных напитков</span>
           </a>
-          <ul class="social">
+          <ul class="social reset-list">
             <li class="social__item">
               <a class="social__link social__link--vk" href="#" aria-label="Мы в вконтакте." target="_blank" rel="noreferrer noopener"></a>
             </li>
@@ -343,7 +363,7 @@
         </div>
         <div class="footer__group footer__group--store">
           <h4 class="footer__header">Интернет-магазин</h4>
-          <ul class="footer__list">
+          <ul class="footer__list reset-list">
             <li class="footer__item">
               <a class="footer__link" href="#" target="_blank" rel="noreferrer noopener">Каталог</a>
             </li>
@@ -360,7 +380,7 @@
         </div>
         <div class="footer__group footer__group--media">
           <h4 class="footer__header">Медиа</h4>
-          <ul class="footer__list">
+          <ul class="footer__list reset-list">
             <li class="footer__item">
               <a class="footer__link" href="#" target="_blank" rel="noreferrer noopener">Блог</a>
             </li>
@@ -374,7 +394,7 @@
         </div>
         <div class="footer__group footer__group--contacts">
           <h4 class="footer__header">Контакты</h4>
-          <ul class="footer__list">
+          <ul class="footer__list reset-list">
             <li class="footer__item">
               <address class="footer__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
             </li>

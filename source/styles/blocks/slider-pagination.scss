@@ -1,0 +1,7 @@
+.slider-pagination {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

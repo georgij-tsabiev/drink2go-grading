@@ -1,0 +1,46 @@
+.slider {
+  padding: 20px 20px 60px;
+}
+
+.slider__item {
+  &:not(:first-child) {
+    display: none;
+  }
+}
+
+.slider__badge {
+  margin: 0 0 4px;
+}
+
+.slider__title {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: $base-dark;
+}
+
+.slider__text {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.42;
+  text-align: center;
+  color: $base-dark;
+}
+
+.slider__button {
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+}

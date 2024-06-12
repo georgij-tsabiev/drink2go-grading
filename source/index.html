@@ -11,7 +11,11 @@
     <header class="header" data-test="header">
       <div class="header__wrapper container">
         <a class="logo" href="index.html">
-          <img class="logo__image" src="images/logo.svg" width="32" height="36" alt="Логотип Drink2Go.">
+          <picture>
+            <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-desktop.svg" width="170" height="72">
+            <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-tablet.svg" width="82" height="36">
+            <img class="logo__image" src="images/logo.svg" width="32" height="36" alt="Логотип Drink2Go.">
+          </picture>
           <span class="logo__text">Интернет-магазин кофейных напитков</span>
         </a>
         <nav class="nav">
@@ -21,9 +25,11 @@
             <li class="nav__item"><a class="nav__link" href="#">Доставка</a></li>
             <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
           </ul>
-          <a class="login-button" href="#"><span class="login-button__text">Войти</span></a>
-          <a class="cart-button" href="#"><span class="cart-button__text">Корзина</span></a>
-          <button class="nav__toggle button" type="button" aria-label="Открыть меню навигации."></button>
+          <div class="nav__buttons">
+            <a class="login-button" href="#"><span class="login-button__text">Войти</span></a>
+            <a class="cart-button" href="#"><span class="cart-button__text">Корзина</span></a>
+            <button class="nav__toggle button" type="button" aria-label="Открыть меню навигации."></button>
+          </div>
         </nav>
       </div>
     </header>

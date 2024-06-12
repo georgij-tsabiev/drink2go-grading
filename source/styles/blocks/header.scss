@@ -1,5 +1,9 @@
 .header {
   background-color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
 }
 
 .header__wrapper {

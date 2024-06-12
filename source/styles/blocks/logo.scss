@@ -2,6 +2,10 @@
   padding: 12px 20px;
   height: 100%;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 20px;
+  }
 }
 
 .logo__text {

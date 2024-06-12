@@ -2,16 +2,56 @@
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    gap: 60px;
+  }
 }
 
 .nav__menu {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.nav__buttons {
+  display: flex;
+}
+
+.nav__link {
+  padding: 32px 20px;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $base-dark;
+
+  &--active {
+    position: relative;
+    color: $base-primary;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $base-primary;
+    }
+  }
 }
 
 .nav__toggle {
   position: relative;
   width: 60px;
-  height: 60px;
+  height: 100%;
   display: inline-block;
 
   &::before {
@@ -29,5 +69,9 @@
 
   &:active {
     background-color: $base-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

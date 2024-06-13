@@ -1,0 +1,49 @@
+.features {
+  padding: 50px 20px 60px;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.features__item {
+  padding-top: 66px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 52px 56px;
+
+  &--speed {
+    background-image: url("../../icons/stack.svg#speed-icon");
+  }
+
+  &--convenience {
+    background-image: url("../../icons/stack.svg#convenience-icon");
+  }
+
+  &--cheerfulness {
+    background-image: url("../../icons/stack.svg#cheerfulness-icon");
+  }
+
+  &--ecological {
+    background-image: url("../../icons/stack.svg#ecological-icon");
+  }
+}
+
+.features__title {
+  margin: 0 0 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.77;
+  text-align: center;
+  color: $base-dark;
+}
+
+.features__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.42;
+  text-align: center;
+  color: $base-dark;
+}

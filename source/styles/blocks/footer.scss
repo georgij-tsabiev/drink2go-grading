@@ -11,10 +11,20 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .footer__logo {
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 .footer__social {
@@ -29,6 +39,12 @@
     padding: 0;
     border-bottom: none;
     grid-column: 1 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    grid-column: auto;
+    align-items: normal;
   }
 }
 
@@ -50,6 +66,10 @@
   line-height: 1.42;
   letter-spacing: 0.02em;
   color: $base-primary;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px;
+  }
 }
 
 .footer__list {
@@ -86,6 +106,10 @@
 
   @media (min-width: $tablet-width) {
     max-width: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
   }
 }
 

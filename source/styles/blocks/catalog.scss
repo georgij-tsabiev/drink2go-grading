@@ -1,4 +1,17 @@
+.catalog {
+  padding: 50px 20px 44px;
+  background-color: $bg-lightest-grey;
+}
+
 .catalog__list {
+  margin: 0 0 40px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.card__link {
+  margin: 0 0 24px;
+  display: flex;
+  justify-content: center;
 }

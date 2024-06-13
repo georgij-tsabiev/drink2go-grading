@@ -8,10 +8,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
 
-.card__link {
-  margin: 0 0 24px;
-  display: flex;
-  justify-content: center;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 349px 349px;
+    gap: 30px;
+  }
 }

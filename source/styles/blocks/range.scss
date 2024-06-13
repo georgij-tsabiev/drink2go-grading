@@ -3,12 +3,12 @@
   /* width: calc(100% - 17px); */
 }
 
-.range__fields {
+.filter__range-fields {
   display: flex;
   justify-content: space-between;
 }
 
-.range__label {
+.filter__range-label {
   padding: 8px 10px;
   width: 118px;
   height: 40px;
@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.range__field {
+.filter__range-field {
   border: none;
   background-color: transparent;
   font-family: $font-family;

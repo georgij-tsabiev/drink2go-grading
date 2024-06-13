@@ -165,16 +165,14 @@
               <fieldset class="filter__group">
                 <legend class="filter__title">Цена</legend>
                 <div class="range"></div>
-                  <button class="range__toggle range__toggle--min" type="button" aria-label="Изменить минимальную цену."></button>
-                  <button class="range__toggle range__toggle--max" type="button" aria-label="Изменить максимальную цену."></button>
-                  <div class="range__fields">
-                    <label class="range__label">
+                  <div class="filter__range-fields">
+                    <label class="filter__range-label">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
-                      <input class="range__field" type="number" name="min-price" min="0" max="999999" placeholder="0" required>
+                      <input class="filter__range-field" type="number" name="min-price" min="0" max="999999" placeholder="0" required>
                     </label>
-                    <label class="range__label">
+                    <label class="filter__range-label">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
-                      <input class="range__field" type="number" name="max-price" min="0" max="999999" placeholder="500" value="900" required>
+                      <input class="filter__range-field" type="number" name="max-price" min="0" max="999999" placeholder="500" value="900" required>
                     </label>
                   </div>
               </fieldset>

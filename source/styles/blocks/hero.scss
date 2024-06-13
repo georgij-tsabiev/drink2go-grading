@@ -1,4 +1,7 @@
 .hero {
   position: relative;
-  background-color: $bg-flat-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 188px;
+  }
 }

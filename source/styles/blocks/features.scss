@@ -16,6 +16,12 @@
     grid-template-columns: 339px 339px;
     gap: 50px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 317.5px);
+    gap: 30px;
+  }
 }
 
 .features__item {
@@ -27,6 +33,11 @@
   @media (min-width: $tablet-width) {
     padding: 0 0 0 72px;
     background-position: top left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 76px 0 0;
+    background-position: top;
   }
 
   &--speed {
@@ -60,6 +71,10 @@
     line-height: 1.5;
     text-align: start;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
 
 .features__text {
@@ -73,5 +88,9 @@
     font-size: 16px;
     line-height: 1.5;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }

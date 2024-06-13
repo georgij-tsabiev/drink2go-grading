@@ -1,0 +1,75 @@
+.footer {
+  padding: 20px 0 30px;
+}
+
+.footer__logo {
+  padding: 0;
+}
+
+.footer__social {
+  padding: 0 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $base-secondary;
+}
+
+.footer__group {
+  padding: 20px;
+  border-bottom: 1px solid $base-secondary;
+}
+
+.footer__header {
+  margin: 0 0 12px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.02em;
+  color: $base-primary;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer__link {
+  padding: 8px 0;
+  display: inline-block;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $base-dark;
+}
+
+.footer__address {
+  margin: 0 0 12px;
+  display: block;
+  padding-left: 19px;
+  font-style: normal;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1.42;
+  color: $base-dark;
+  background-image: url("../../icons/stack.svg#address-icon");
+  background-repeat: no-repeat;
+  background-size: 13px 16px;
+  background-position: top left;
+}
+
+.footer__phone {
+  padding-left: 19px;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1.42;
+  color: $base-dark;
+  background-image: url("../../icons/stack.svg#phone-icon");
+  background-repeat: no-repeat;
+  background-size: 13px 16px;
+  background-position: left;
+}

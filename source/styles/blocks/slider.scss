@@ -44,3 +44,9 @@
     right: 0;
   }
 }
+
+.slider__button-arrow {
+  &--next {
+    transform: rotate(180deg);
+  }
+}

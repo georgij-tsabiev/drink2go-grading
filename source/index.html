@@ -106,8 +106,16 @@
                 </div>
               </li>
             </ul>
-            <button class="slider__button button slider__button--prev" type="button" aria-label="Показать предыдущий товар."></button>
-            <button class="slider__button button slider__button--next" type="button" aria-label="Показать следующий товар."></button>
+            <button class="slider__button button slider__button--prev" type="button" aria-label="Показать предыдущий товар.">
+              <svg class="slider__button-arrow" width="20" height="20">
+                <use href="icons/stack.svg#slider-arrow"></use>
+              </svg>
+            </button>
+            <button class="slider__button button slider__button--next" type="button" aria-label="Показать следующий товар.">
+              <svg class="slider__button-arrow slider__button-arrow--next" width="20" height="20">
+                <use href="icons/stack.svg#slider-arrow"></use>
+              </svg>
+            </button>
             <ul class="slider-pagination reset-list">
               <li class="slider-pagination__item">
                 <button class="slider-pagination__button slider-pagination__button--current" type="button" aria-label="Первый товар слайдера."></button>

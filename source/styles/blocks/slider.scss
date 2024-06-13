@@ -6,6 +6,10 @@
     padding: 60px 80px 308px;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 105px 84px;
+  }
 }
 
 .slider__item {
@@ -18,6 +22,11 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .slider__image-wrapper {
@@ -26,16 +35,29 @@
     position: absolute;
     bottom: -175px;
   }
+
+  @media (min-width: $desktop-width) {
+    order: initial;
+    position: static;
+  }
 }
 
 .slider__description {
   @media (min-width: $tablet-width) {
     max-width: 608px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
 }
 
 .slider__badge {
   margin: 0 0 4px;
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .slider__title {
@@ -52,6 +74,10 @@
     font-size: 56px;
     line-height: 1.42;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .slider__text {
@@ -64,6 +90,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.6;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 

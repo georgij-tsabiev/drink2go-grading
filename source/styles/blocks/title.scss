@@ -5,4 +5,9 @@
   line-height: 1.5;
   text-align: center;
   color: $base-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 1.52;
+  }
 }

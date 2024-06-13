@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="#" type="font/woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="vendor/nouislider.min.css">
   </head>
   <body class="page__body">
     <header class="header" data-test="header">
@@ -163,20 +164,19 @@
             <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter__group">
                 <legend class="filter__title">Цена</legend>
-                <div class="range">
+                <div class="range"></div>
                   <button class="range__toggle range__toggle--min" type="button" aria-label="Изменить минимальную цену."></button>
                   <button class="range__toggle range__toggle--max" type="button" aria-label="Изменить максимальную цену."></button>
                   <div class="range__fields">
-                    <label for="min-price">
+                    <label class="range__label">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
+                      <input class="range__field" type="number" name="min-price" min="0" max="999999" placeholder="0" required>
                     </label>
-                    <input class="range__field" type="text" id="min-price" name="min-price" placeholder="0" required>
-                    <label for="max-price">
+                    <label class="range__label">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
+                      <input class="range__field" type="number" name="max-price" min="0" max="999999" placeholder="500" value="900" required>
                     </label>
-                    <input class="range__field" type="text" id="max-price" name="max-price" placeholder="500" value="900" required>
                   </div>
-                </div>
               </fieldset>
               <fieldset class="filter__group">
                 <legend class="filter__title">Наличие молока</legend>
@@ -454,5 +454,6 @@
       </div>
     </footer>
     <script src="scripts/index.js"></script>
+    <script src="vendor/nouislider.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,29 @@
+.sorting {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting__title {
+  margin: 0;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $base-dark;
+}
+
+.sorting__select {
+  padding: 4px 8px 4px 0;
+  display: flex;
+  border: 0;
+  background-color: transparent;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $base-primary;
+  cursor: pointer;
+}

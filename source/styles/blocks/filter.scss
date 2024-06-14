@@ -10,6 +10,10 @@
     grid-template-columns: repeat(3, 222px);
     gap: 40px 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .filter__group {

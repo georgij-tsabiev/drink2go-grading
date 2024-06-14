@@ -1,0 +1,90 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination__list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pagination__link {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 4px;
+  text-align: center;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $base-primary;
+  background-color: $base-white;
+
+  &--current {
+    font-weight: 600;
+    color: $base-dark;
+    background-color: transparent;
+  }
+}
+
+.pagination__link-text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.pagination__prev {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: $base-primary;
+    mask-image: url("../../icons/stack.svg#pagination-arrow-icon");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 20px;
+    width: 91px;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.pagination__next {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    width: 10px;
+    height: 10px;
+    background-color: $base-primary;
+    mask-image: url("../../icons/stack.svg#pagination-arrow-icon");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 20px;
+    width: 91px;
+
+    &::after {
+      content: none;
+    }
+  }
+}

@@ -3,6 +3,9 @@
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
+/* LIBS */
+@import "../vendor/nouislider.min.css";
+
 /* BLOCKS */
 @import "./blocks/page.scss";
 @import "./blocks/container.scss";

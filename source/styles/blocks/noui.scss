@@ -1,0 +1,44 @@
+// styelint ругается на большие буквы в генерируемых noUiSlider'ом классах, поэтому отключаю это правило.
+// stylelint-disable selector-class-pattern
+
+.noUi-target {
+  height: 2px;
+  background: $alt-light-grey;
+  border: none;
+  border-radius: 0%;
+  box-shadow: none;
+}
+
+.noUi-base {
+  height: 4px;
+}
+
+.noUi-connect {
+  background: $alt-primary-lighter;
+}
+
+.noUi-handle {
+  box-shadow: none;
+  background-color: $base-white;
+  border: 2px solid $alt-primary-lighter;
+  border-radius: 100%;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  top: -10px;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+  right: 0;
+}
+
+.noUi-horizontal .noUi-handle-lower {
+  right: -23px;
+}

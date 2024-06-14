@@ -3,9 +3,6 @@
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
-/* LIBS */
-@import "../vendor/nouislider.min.css";
-
 /* BLOCKS */
 @import "./blocks/page.scss";
 @import "./blocks/container.scss";
@@ -32,3 +29,6 @@
 @import "./blocks/catalog.scss";
 @import "./blocks/filter.scss";
 @import "./blocks/range.scss";
+@import "./blocks/noui-target.scss";
+/* LIBS */
+@import "../vendor/nouislider.min.css";

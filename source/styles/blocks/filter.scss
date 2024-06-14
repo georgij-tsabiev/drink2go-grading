@@ -1,5 +1,15 @@
 .filter {
-  max-width: 318px;
+  @media (min-width: $desktop-width) {
+    max-width: 318px;
+  }
+}
+
+.filter__form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 222px);
+    gap: 40px 30px;
+  }
 }
 
 .filter__group {
@@ -30,6 +40,10 @@
   border: 2px solid $alt-primary-lighter;
   border-radius: 4px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+  }
 }
 
 .filter__range-field {
@@ -54,9 +68,20 @@
   }
 }
 
+.filter__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
 .filter__apply {
   width: 100%;
-  margin: 0 0 20px;
 }
 
 .filter__reset {

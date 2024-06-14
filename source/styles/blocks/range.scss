@@ -1,47 +1,13 @@
 .range {
   margin: 0 0 24px;
-  /* width: calc(100% - 17px); */
-}
-
-.filter__range-fields {
-  display: flex;
-  justify-content: space-between;
-}
-
-.filter__range-label {
-  padding: 8px 10px;
-  width: 118px;
-  height: 40px;
-  border: 2px solid $alt-primary-lighter;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.filter__range-field {
-  border: none;
-  background-color: transparent;
-  font-family: $font-family;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: $base-dark;
-
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    appearance: none;
-    margin: 0;
-  }
-
-  &::placeholder {
-    color: $base-light;
-    opacity: 1;
-  }
 }
 
 .range__field[type="number"] {
   appearance: textfield;
 }
+
+//styelint ругается на большие буквы в генерерируемых noUiSlider'ом классах, поэтому отключаю это правило.
+// stylelint-disable selector-class-pattern
 
 .noUi-target {
   height: 2px;

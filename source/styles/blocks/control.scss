@@ -1,0 +1,10 @@
+.control__outline {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border: 2px solid $base-light;
+  border-radius: 100%;
+}

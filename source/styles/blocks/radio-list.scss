@@ -36,7 +36,7 @@
 
 .radio-list__field:checked:hover + .radio-list__outline {
   &::after {
-    opacity: 1;
+    background-color: $base-primary;
   }
 }
 
@@ -51,9 +51,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: $base-primary;
+    background-color: $alt-primary-opacity;
     border-radius: 50%;
-    opacity: 0.25;
   }
 }
 

@@ -3,6 +3,26 @@
   background-color: $bg-lightest-grey;
 }
 
+.catalog__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    gap: 0 30px;
+  }
+}
+
+.catalog__badge {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.catalog__title {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
+}
+
 .catalog__list {
   margin: 0 0 40px;
   display: flex;
@@ -13,5 +33,9 @@
     display: grid;
     grid-template-columns: 349px 349px;
     gap: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 317px);
   }
 }

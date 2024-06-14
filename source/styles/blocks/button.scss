@@ -14,4 +14,14 @@
     line-height: 150%;
     color: $base-white;
   }
+
+  &--additional {
+    border-radius: 4px;
+    padding: 8px 20px;
+    background-color: $base-white;
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 150%;
+    color: $base-primary;
+  }
 }

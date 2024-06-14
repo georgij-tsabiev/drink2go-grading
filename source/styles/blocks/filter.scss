@@ -1,8 +1,11 @@
+.filter {
+  max-width: 318px;
+}
+
 .filter__group {
   padding: 0;
   margin: 0 0 30px;
   border: none;
-  max-width: 318px;
 }
 
 .filter__title {
@@ -49,4 +52,13 @@
     color: $base-light;
     opacity: 1;
   }
+}
+
+.filter__apply {
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.filter__reset {
+  width: 100%;
 }

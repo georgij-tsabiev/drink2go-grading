@@ -24,8 +24,9 @@
     position: absolute;
     width: 42px;
     height: 24px;
-    top: 0;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
     background-color: $base-light;
     border-radius: 12px;
     transition: background-color 0.3s;

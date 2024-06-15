@@ -27,7 +27,30 @@
     background-color: $base-white;
   }
 
-  &--current::after {
-    background-color: $base-primary;
+  &:hover,
+  &:focus-visible {
+    outline: none;
+
+    &::after {
+      background-color: $alt-primary-opacity;
+    }
+  }
+
+  &:active {
+    &::after {
+      background-color: $base-primary;
+    }
+  }
+
+  &--current {
+    &::after {
+      background-color: $base-primary;
+    }
+
+    &:hover {
+      &::after {
+        background-color: $base-primary;
+      }
+    }
   }
 }

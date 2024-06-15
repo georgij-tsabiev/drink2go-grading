@@ -13,6 +13,21 @@
     font-size: 16px;
     line-height: 150%;
     color: $base-white;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      background-color: $alt-primary-lighter;
+    }
+
+    &:active {
+      background-color: $alt-primary-darker;
+    }
+
+    &:disabled {
+      background-color: $base-light;
+      cursor: not-allowed;
+    }
   }
 
   &--additional {
@@ -23,5 +38,32 @@
     font-size: 16px;
     line-height: 150%;
     color: $base-primary;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      background-color: $alt-primary-lighter;
+      color: $base-white;
+    }
+
+    &:active {
+      background-color: $alt-primary-darker;
+      color: $base-white;
+    }
+
+    &:disabled {
+      background-color: $alt-light-grey;
+      color: $base-white;
+      cursor: not-allowed;
+    }
+  }
+
+  &--disabled {
+    background-color: $base-light;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $base-light;
+    }
   }
 }

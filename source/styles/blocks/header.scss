@@ -12,5 +12,10 @@
 
 .header__wrapper {
   display: flex;
+  position: relative;
   gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }

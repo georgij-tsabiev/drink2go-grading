@@ -94,6 +94,16 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: $base-dark;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    color: $alt-primary-lighter;
+  }
+
+  &:active {
+    color: $alt-primary-darker;
+  }
 }
 
 .footer__address {
@@ -129,4 +139,13 @@
   background-repeat: no-repeat;
   background-size: 13px 16px;
   background-position: left;
+
+  &:hover,
+  &:focus-visible {
+    color: $alt-primary-lighter;
+  }
+
+  &:active {
+    color: $alt-primary-darker;
+  }
 }

@@ -127,3 +127,7 @@
     display: none;
   }
 }
+
+.nav__menu--opened ~ .nav__buttons .nav__toggle::before {
+  mask-image: url("../../icons/stack.svg#burger-close-icon");
+}

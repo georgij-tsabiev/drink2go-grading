@@ -13,6 +13,19 @@
     gap: 20px;
     max-width: 316px;
   }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+
+    .logo__text {
+      color: $base-primary;
+    }
+  }
 }
 
 .logo__text {

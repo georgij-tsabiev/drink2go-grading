@@ -31,6 +31,7 @@
     transform: translate(-50%, -50%);
     border-radius: 50%;
     background-color: $base-primary;
+    transition: background-color 0.3s;
   }
 }
 

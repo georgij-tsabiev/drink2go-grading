@@ -40,4 +40,22 @@
     background-repeat: no-repeat;
     background-color: $base-light;
   }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    color: $base-primary;
+
+    &::after {
+      background-color: $base-primary;
+    }
+  }
+
+  &:active {
+    color: $alt-primary-darker;
+
+    &::after {
+      background-color: $alt-primary-darker;
+    }
+  }
 }

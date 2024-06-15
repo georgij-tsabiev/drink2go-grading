@@ -6,7 +6,7 @@ const inputMax = document.querySelector('.range__field--max');
 const inputs = [inputMin, inputMax];
 if (rangeSlider) {
   noUiSlider.create(rangeSlider, {
-    start: [0, 1000],
+    start: [0, 900],
     connect: true,
     step: 1,
     range: {

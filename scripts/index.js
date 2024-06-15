@@ -1,1 +1,1 @@
-var e=document.querySelector(".range");e&&noUiSlider.create(e,{start:[0,1e3],connect:!0,step:1,range:{min:[0],max:[1e3]}});
+var r=document.querySelector(".range-slider"),o=document.querySelector(".range__field--min"),c=document.querySelector(".range__field--max"),a=[o,c];if(r){noUiSlider.create(r,{start:[0,1e3],connect:!0,step:1,range:{min:[0],max:[1e3]}}),r.noUiSlider.on("update",(n,e)=>{a[e].value=Math.round(n[e])});let i=(n,e)=>{let t=[null,null];t[n]=e,r.noUiSlider.set(t)};a.forEach((n,e)=>{n.addEventListener("change",t=>{i(e,t.currentTarget.value)})})}

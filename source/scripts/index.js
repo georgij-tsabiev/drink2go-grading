@@ -15,7 +15,7 @@ if (rangeSlider) {
     }
   });
   rangeSlider.noUiSlider.on('update', (values, handle) => {
-    inputs[handle].value = Math.round(values[handle]);
+    inputs[handle].value = Math.round(values[handle]) || '';
   });
   const setRangeSlider = (input, value) => {
     const arr = [null, null];

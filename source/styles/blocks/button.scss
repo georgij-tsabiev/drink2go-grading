@@ -57,13 +57,13 @@
       cursor: not-allowed;
     }
   }
+}
 
-  &--disabled {
+.button__link-disabled {
+  background-color: $base-light;
+  cursor: not-allowed;
+
+  &:hover {
     background-color: $base-light;
-    cursor: not-allowed;
-
-    &:hover {
-      background-color: $base-light;
-    }
   }
 }

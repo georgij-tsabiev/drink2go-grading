@@ -24,10 +24,28 @@
   color: $base-primary;
   background-color: $base-white;
 
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    background-color: $alt-primary-lighter;
+    color: $base-white;
+  }
+
+  &:active {
+    background-color: $alt-primary-darker;
+    color: $base-white;
+  }
+
   &--current {
     font-weight: 600;
     color: $base-dark;
     background-color: transparent;
+
+    &:hover {
+      color: initial;
+      background-color: initial;
+      cursor: default;
+    }
   }
 }
 
@@ -86,5 +104,35 @@
     &::after {
       content: none;
     }
+  }
+}
+
+.pagination__prev,
+.pagination__next {
+  &:hover,
+  &:focus-visible {
+    &::after {
+      background-color: $base-white;
+    }
+  }
+
+  &:active {
+    &::after {
+      background-color: $base-white;
+    }
+  }
+}
+
+.pagination__link-disabled {
+  background-color: $alt-light-grey;
+
+  &::after {
+    background-color: $base-white;
+  }
+
+  &:hover {
+    color: initial;
+    background-color: $alt-light-grey;
+    cursor: not-allowed;
   }
 }

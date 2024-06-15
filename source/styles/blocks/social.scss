@@ -40,4 +40,18 @@
   &--ok::after {
     mask-image: url("../../icons/stack.svg#ok-icon");
   }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    background-color: $base-secondary;
+
+    &::after {
+      background-color: $base-primary;
+    }
+  }
+
+  &:active {
+    background-color: $alt-primary-opacity;
+  }
 }

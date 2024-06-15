@@ -2,12 +2,16 @@
   padding: 40px 20px 20px;
   background-color: $base-white;
   border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .card__link {
   margin: 0 0 24px;
   display: flex;
   justify-content: center;
+  grid-column: 1 / -1;
 }
 
 .card__name {
@@ -18,6 +22,7 @@
   font-size: 18px;
   line-height: 1.77;
   color: $base-dark;
+  grid-column: 1 / -1;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 10px;
@@ -32,8 +37,32 @@
   font-size: 14px;
   line-height: 1.42;
   color: $base-dark;
+  grid-column: 1 / -1;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 20px;
+  }
+}
+
+.card__button {
+  padding-left: 46px;
+  min-width: 141px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.42;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    top: 10px;
+    left: 20px;
+    background-image: url("../../icons/stack.svg#add-to-cart-icon");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 141px;
   }
 }

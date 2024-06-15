@@ -57,7 +57,7 @@
   }
 }
 
-.radio-list__field:focus + .radio-list__outline {
+.radio-list__field:focus-visible + .radio-list__outline {
   border: 2px solid $alt-primary-lighter;
 
   &::after {

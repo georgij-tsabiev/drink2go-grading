@@ -57,6 +57,12 @@
   }
 }
 
+.radio-list__field:disabled:hover + .radio-list__outline {
+  &::after {
+    content: none;
+  }
+}
+
 .radio-list__field:focus-visible + .radio-list__outline {
   border: 2px solid $alt-primary-lighter;
 

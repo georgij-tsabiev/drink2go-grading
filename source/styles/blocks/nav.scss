@@ -1,20 +1,32 @@
 .nav {
-  margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-
   @media (min-width: $tablet-width) {
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 399px 120px;
     gap: 60px;
+    align-items: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 459px 261px;
+    gap: 162px;
   }
 }
 
 .nav__menu {
+  flex-wrap: wrap;
+
   &--closed {
     display: none;
 
     @media (min-width: $tablet-width) {
       display: flex;
       max-width: 398px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 459px;
+      gap: 20px;
     }
   }
 
@@ -61,9 +73,19 @@
 
 .nav__buttons {
   display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 60px 60px;
+    align-items: normal;
+  }
 
   @media (min-width: $desktop-width) {
     gap: 20px;
+
+    grid-template-columns: 112px 129px;
   }
 }
 
@@ -113,7 +135,7 @@
 .nav__toggle {
   position: relative;
   width: 60px;
-  height: 100%;
+  min-height: 60px;
   display: inline-block;
 
   &::before {

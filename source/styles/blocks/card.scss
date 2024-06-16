@@ -12,6 +12,16 @@
   display: flex;
   justify-content: center;
   grid-column: 1 / -1;
+  transition: transform 0.3s;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .card__name {
@@ -28,6 +38,15 @@
     margin: 0 0 10px;
     font-size: 24px;
     line-height: 1.5;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $alt-primary-lighter;
+  }
+
+  &:active {
+    color: $alt-primary-darker;
   }
 }
 

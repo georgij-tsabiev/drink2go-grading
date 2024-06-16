@@ -1,5 +1,4 @@
 /* Range слайдер */
-
 const rangeSlider = document.querySelector('.range-slider');
 const inputMin = document.querySelector('.range__field--min');
 const inputMax = document.querySelector('.range__field--max');
@@ -32,13 +31,7 @@ if (rangeSlider) {
 /* Мобильное меню */
 const navMenu = document.querySelector('.nav__menu');
 const navToggle = document.querySelector('.js-toggle-button');
-
 navToggle.addEventListener('click', () => {
-  if (navMenu.classList.contains('nav__menu--closed')) {
-    navMenu.classList.remove('nav__menu--closed');
-    navMenu.classList.add('nav__menu--opened');
-  } else {
-    navMenu.classList.remove('nav__menu--opened');
-    navMenu.classList.add('nav__menu--closed');
-  }
+  navMenu.classList.toggle('nav__menu--closed');
+  navMenu.classList.toggle('nav__menu--opened');
 });

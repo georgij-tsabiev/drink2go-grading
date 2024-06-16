@@ -1,4 +1,4 @@
-/* Range слайдер */
+/* Рендж слайдер */
 const rangeSlider = document.querySelector('.range-slider');
 const inputMin = document.querySelector('.range__field--min');
 const inputMax = document.querySelector('.range__field--max');
@@ -36,48 +36,14 @@ navToggle.addEventListener('click', () => {
   navMenu.classList.toggle('nav__menu--opened');
 });
 
-/* const paginationLinks = document.querySelectorAll('.pagination__list .pagination__link');
-const prevLink = document.querySelector('.pagination__prev');
-const nextLink = document.querySelector('.pagination__next');
-
-function updateDisabledState() {
-  const firstLink = paginationLinks[0];
-  const lastLink = paginationLinks[paginationLinks.length - 1];
-
-  if (firstLink.classList.contains('pagination__link--current')) {
-    prevLink.classList.add('pagination__link-hidden');
-  } else {
-    prevLink.classList.remove('pagination__link-hidden');
-  }
-
-  if (lastLink.classList.contains('pagination__link--current')) {
-    nextLink.classList.add('pagination__link-hidden');
-  } else {
-    nextLink.classList.remove('pagination__link-hidden');
-  }
-}
-// Initialize the disabled state
-updateDisabledState(); */
-
+/* Показ и скрытие кнопок в пагинации каталога */
 const paginationLinks = document.querySelectorAll('.pagination__list .pagination__link');
 const prevLink = document.querySelector('.pagination__prev');
 const nextLink = document.querySelector('.pagination__next');
-
-function updateDisabledState() {
+const togglePrevNextVisibility = () => {
   const firstLink = paginationLinks[0];
   const lastLink = paginationLinks[paginationLinks.length - 1];
-
-  if (firstLink.classList.contains('pagination__link-current')) {
-    prevLink.classList.add('pagination__link-hidden');
-  } else {
-    prevLink.classList.remove('pagination__link-hidden');
-  }
-
-  if (lastLink.classList.contains('pagination__link-current')) {
-    nextLink.classList.add('pagination__link-hidden');
-  } else {
-    nextLink.classList.remove('pagination__link-hidden');
-  }
-}
-// Initialize the disabled state
-updateDisabledState();
+  prevLink.classList.toggle('pagination__link-hidden', firstLink.classList.contains('pagination__link-current'));
+  nextLink.classList.toggle('pagination__link-hidden', lastLink.classList.contains('pagination__link-current'));
+};
+togglePrevNextVisibility();

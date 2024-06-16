@@ -22,6 +22,36 @@
   background-color: $base-white;
   border: 2px solid $alt-primary-lighter;
   border-radius: 100%;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+
+    .noUi-touch-area {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: $alt-primary-opacity;
+        transition: background-color 0.3s;
+      }
+    }
+  }
+
+  &:active {
+    .noUi-touch-area {
+      &::after {
+        background-color: $base-primary;
+      }
+    }
+  }
 }
 
 .noUi-horizontal .noUi-handle {
@@ -42,4 +72,16 @@
 
 .noUi-horizontal .noUi-handle-lower {
   right: -23px;
+}
+
+.noui-slider.noui-slider-disabled {
+  pointer-events: none;
+
+  .noUi-connect {
+    background-color: $base-light;
+  }
+
+  .noUi-handle {
+    border: 2px solid $base-light;
+  }
 }

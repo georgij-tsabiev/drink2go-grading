@@ -38,8 +38,6 @@ nextButton.addEventListener('click', () => {
 });
 showSlide(currentSlide);
 
-
-
 /* Рендж слайдер */
 const rangeSlider = document.querySelector('.range-slider');
 const inputMin = document.querySelector('.range__field--min');

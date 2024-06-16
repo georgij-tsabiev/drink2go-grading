@@ -13,19 +13,21 @@
 }
 
 .slider__item {
-  &:not(:first-child) {
-    display: none;
-  }
+  display: none;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  &--current {
+    display: block;
 
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    gap: 30px;
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      gap: 30px;
+    }
   }
 }
 
@@ -102,34 +104,6 @@
   height: 100%;
   position: absolute;
   top: 0;
-
-  &--prev {
-    left: 0;
-
-    &:hover,
-    &:focus {
-      outline: none;
-      background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-    }
-
-    &:active {
-      background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
-    }
-  }
-
-  &--next {
-    right: 0;
-
-    &:hover,
-    &:focus-visible {
-      outline: none;
-      background: linear-gradient(-90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-    }
-
-    &:active {
-      background: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
-    }
-  }
 
   @media (min-width: $tablet-width) {
     width: 80px;

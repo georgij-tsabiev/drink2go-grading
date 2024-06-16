@@ -1,3 +1,41 @@
+/* Мобильное меню */
+const navMenu = document.querySelector('.nav__menu');
+const navToggle = document.querySelector('.js-toggle-button');
+navToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('nav__menu--closed');
+  navMenu.classList.toggle('nav__menu--opened');
+});
+
+/* Слайдер товаров */
+const paginationButtons = document.querySelectorAll('.slider-pagination__button');
+const slides = document.querySelectorAll('.slider__item');
+const prevButton = document.querySelector('.slider-button-prev');
+const nextButton = document.querySelector('.slider-button-next');
+const totalSlides = slides.length;
+let currentSlide = 0;
+const showSlide = (index) => {
+  slides.forEach((slider) => slider.classList.remove('slider__item--current'));
+  paginationButtons.forEach((button) => button.classList.remove('slider-pagination__button--current'));
+  slides[index].classList.add('slider__item--current');
+  paginationButtons[index].classList.add('slider-pagination__button--current');
+};
+paginationButtons.forEach((button, index) => {
+  button.addEventListener('click', () => showSlide(index));
+});
+prevButton.addEventListener('click', () => {
+  if (currentSlide > 0) {
+    currentSlide--;
+    showSlide(currentSlide);
+  }
+});
+nextButton.addEventListener('click', () => {
+  if (currentSlide < totalSlides - 1) {
+    currentSlide++;
+    showSlide(currentSlide);
+  }
+});
+showSlide(currentSlide);
+
 /* Рендж слайдер */
 const rangeSlider = document.querySelector('.range-slider');
 const inputMin = document.querySelector('.range__field--min');
@@ -27,14 +65,6 @@ if (rangeSlider) {
     });
   });
 }
-
-/* Мобильное меню */
-const navMenu = document.querySelector('.nav__menu');
-const navToggle = document.querySelector('.js-toggle-button');
-navToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('nav__menu--closed');
-  navMenu.classList.toggle('nav__menu--opened');
-});
 
 /* Показ и скрытие кнопок в пагинации каталога */
 const paginationLinks = document.querySelectorAll('.pagination__list .pagination__link');

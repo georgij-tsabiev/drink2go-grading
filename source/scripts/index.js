@@ -18,6 +18,8 @@ const showSlide = (index) => {
   paginationButtons.forEach((button) => button.classList.remove('slider-pagination__button--current'));
   slides[index].classList.add('slider__item--current');
   paginationButtons[index].classList.add('slider-pagination__button--current');
+  prevButton.style.cursor = index === 0 ? 'default' : 'pointer';
+  nextButton.style.cursor = index === totalSlides - 1 ? 'default' : 'pointer';
 };
 paginationButtons.forEach((button, index) => {
   button.addEventListener('click', () => showSlide(index));
@@ -35,6 +37,8 @@ nextButton.addEventListener('click', () => {
   }
 });
 showSlide(currentSlide);
+
+
 
 /* Рендж слайдер */
 const rangeSlider = document.querySelector('.range-slider');

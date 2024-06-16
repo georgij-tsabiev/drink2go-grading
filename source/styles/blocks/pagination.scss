@@ -35,18 +35,6 @@
     background-color: $alt-primary-darker;
     color: $base-white;
   }
-
-  &--current {
-    font-weight: 600;
-    color: $base-dark;
-    background-color: transparent;
-
-    &:hover {
-      color: initial;
-      background-color: initial;
-      cursor: default;
-    }
-  }
 }
 
 .pagination__link-text {
@@ -123,6 +111,18 @@
   }
 }
 
+.pagination__link-current {
+  font-weight: 600;
+  color: $base-dark;
+  background-color: transparent;
+
+  &:hover {
+    color: initial;
+    background-color: initial;
+    cursor: default;
+  }
+}
+
 .pagination__link-disabled {
   background-color: $alt-light-grey;
 
@@ -135,4 +135,9 @@
     background-color: $alt-light-grey;
     cursor: not-allowed;
   }
+}
+
+.pagination__link-hidden {
+  opacity: 0;
+  pointer-events: none;
 }

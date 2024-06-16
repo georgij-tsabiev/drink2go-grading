@@ -358,12 +358,13 @@
             <div class="pagination">
               <!-- Состояние disabled у ссылок пагинации - класс pagination__link-disabled -->
               <a class="pagination__link pagination__prev" href="#"><span class="pagination__link-text">Назад</span></a>
+              <!-- Для корректной работы скрытия кнопок "назад" и "вперёд" при активной первой или последней ссылке, нужно добавлять класс pagination__link-current именно в редакторе, а не DevTools. -->
               <ul class="pagination__list reset-list">
                 <li class="pagination__item">
                   <a class="pagination__link" href="#">1</a>
                 </li>
                 <li class="pagination__item">
-                  <a class="pagination__link pagination__link--current" href="#">2</a>
+                  <a class="pagination__link pagination__link-current" href="#">2</a>
                 </li>
                 <li class="pagination__item">
                   <a class="pagination__link" href="#">3</a>

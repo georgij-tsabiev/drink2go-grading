@@ -35,3 +35,49 @@ navToggle.addEventListener('click', () => {
   navMenu.classList.toggle('nav__menu--closed');
   navMenu.classList.toggle('nav__menu--opened');
 });
+
+/* const paginationLinks = document.querySelectorAll('.pagination__list .pagination__link');
+const prevLink = document.querySelector('.pagination__prev');
+const nextLink = document.querySelector('.pagination__next');
+
+function updateDisabledState() {
+  const firstLink = paginationLinks[0];
+  const lastLink = paginationLinks[paginationLinks.length - 1];
+
+  if (firstLink.classList.contains('pagination__link--current')) {
+    prevLink.classList.add('pagination__link-hidden');
+  } else {
+    prevLink.classList.remove('pagination__link-hidden');
+  }
+
+  if (lastLink.classList.contains('pagination__link--current')) {
+    nextLink.classList.add('pagination__link-hidden');
+  } else {
+    nextLink.classList.remove('pagination__link-hidden');
+  }
+}
+// Initialize the disabled state
+updateDisabledState(); */
+
+const paginationLinks = document.querySelectorAll('.pagination__list .pagination__link');
+const prevLink = document.querySelector('.pagination__prev');
+const nextLink = document.querySelector('.pagination__next');
+
+function updateDisabledState() {
+  const firstLink = paginationLinks[0];
+  const lastLink = paginationLinks[paginationLinks.length - 1];
+
+  if (firstLink.classList.contains('pagination__link-current')) {
+    prevLink.classList.add('pagination__link-hidden');
+  } else {
+    prevLink.classList.remove('pagination__link-hidden');
+  }
+
+  if (lastLink.classList.contains('pagination__link-current')) {
+    nextLink.classList.add('pagination__link-hidden');
+  } else {
+    nextLink.classList.remove('pagination__link-hidden');
+  }
+}
+// Initialize the disabled state
+updateDisabledState();

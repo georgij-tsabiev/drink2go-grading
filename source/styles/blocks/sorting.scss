@@ -15,10 +15,48 @@
   color: $base-dark;
 }
 
+.sorting__select-wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    right: 10px;
+    background-image: url("../../icons/stack.svg#select-arrow-icon");
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  &:active {
+    &::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &:focus-within {
+    &::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .sorting__select {
+      background-color: $base-secondary;
+    }
+  }
+}
+
 .sorting__select {
-  padding: 4px 8px 4px 0;
+  padding: 4px 30px 4px 10px;
+  border-radius: 4px;
+  appearance: none;
   display: flex;
-  border: 0;
+  border: none;
+  outline: none;
   background-color: transparent;
   font-family: $font-family;
   font-weight: 600;

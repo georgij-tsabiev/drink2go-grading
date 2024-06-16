@@ -22,16 +22,29 @@
     }
   }
 
-  &:hover::before {
-    background-color: $base-primary;
-  }
-
   @media (min-width: $desktop-width) {
     min-width: 129px;
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
+  }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+
+    .cart-button__text {
+      color: $base-primary;
+    }
+
+    &::before {
+      background-color: $base-primary;
+    }
+  }
+
+  &:active {
+    background-color: $base-secondary;
   }
 }
 

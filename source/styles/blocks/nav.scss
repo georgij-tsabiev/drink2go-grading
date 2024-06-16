@@ -98,6 +98,16 @@
       }
     }
   }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    color: $base-primary;
+  }
+
+  &:active {
+    background-color: $base-secondary;
+  }
 }
 
 .nav__toggle {
@@ -119,12 +129,12 @@
     background-repeat: no-repeat;
   }
 
-  &:active {
-    background-color: $base-secondary;
-  }
-
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &:active {
+    background-color: $base-secondary;
   }
 }
 

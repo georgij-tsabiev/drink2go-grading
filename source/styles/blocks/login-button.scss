@@ -22,16 +22,29 @@
     }
   }
 
-  &:hover::before {
-    background-color: $base-primary;
-  }
-
   @media (min-width: $desktop-width) {
     min-width: 112px;
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
+  }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+
+    .login-button__text {
+      color: $base-primary;
+    }
+
+    &::before {
+      background-color: $base-primary;
+    }
+  }
+
+  &:active {
+    background-color: $base-secondary;
   }
 }
 

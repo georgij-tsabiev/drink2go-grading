@@ -4,7 +4,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 80px 292px;
+    padding: 60px 80px 293px;
     min-height: auto;
   }
 
@@ -39,13 +39,11 @@
     order: 2;
     position: absolute;
     bottom: -197px;
-    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
     order: initial;
     position: static;
-    z-index: auto;
   }
 }
 

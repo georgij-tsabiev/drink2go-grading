@@ -1,5 +1,13 @@
 .hero {
   background-color: $bg-flat-white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 187px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .hero__container {

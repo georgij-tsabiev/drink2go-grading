@@ -105,6 +105,16 @@
     max-width: 115px;
   }
 
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    color: $base-primary;
+  }
+
+  &:active {
+    background-color: $base-secondary;
+  }
+
   &--active {
     position: relative;
     color: $base-primary;
@@ -120,16 +130,13 @@
         background-color: $base-primary;
       }
     }
-  }
 
-  &:hover,
-  &:focus-visible {
-    outline: none;
-    color: $base-primary;
-  }
-
-  &:active {
-    background-color: $base-secondary;
+    &:hover,
+    &:focus-visible {
+      &::after {
+        background-color: $base-dark;
+      }
+    }
   }
 }
 

@@ -39,11 +39,13 @@
     order: 2;
     position: absolute;
     bottom: -197px;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
     order: initial;
     position: static;
+    z-index: auto;
   }
 }
 

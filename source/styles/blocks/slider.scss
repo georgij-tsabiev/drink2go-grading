@@ -1,9 +1,11 @@
 .slider {
   padding: 20px 20px 60px;
+  min-height: 645px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 60px 80px 308px;
-    position: relative;
+    min-height: auto;
   }
 
   @media (min-width: $desktop-width) {

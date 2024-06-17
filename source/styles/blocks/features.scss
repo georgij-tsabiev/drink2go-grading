@@ -2,7 +2,11 @@
   padding: 50px 20px 60px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 20px 100px;
+    padding: 248px 20px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 20px;
   }
 }
 

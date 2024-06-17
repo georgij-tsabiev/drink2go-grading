@@ -82,4 +82,8 @@
   @media (min-width: $tablet-width) {
     padding: 4px 30px 4px 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 1px 30px 4px 10px;
+  }
 }

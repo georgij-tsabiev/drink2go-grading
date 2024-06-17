@@ -18,11 +18,12 @@
 
     @media (min-width: $desktop-width) {
       top: 50%;
-      left: 20px;
+      left: 28px;
     }
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 24px;
     height: 80px;
   }
 

@@ -5,4 +5,9 @@
   line-height: 2;
   text-decoration: line-through;
   color: $base-primary;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    margin-right: 9px;
+  }
 }

@@ -22,6 +22,12 @@
   padding: 0;
   margin: 0 0 31px;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    &:last-of-type {
+      margin: 0 0 38px;
+    }
+  }
 }
 
 .filter__title {

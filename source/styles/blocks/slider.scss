@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px 105px 84px;
+    padding: 30px 105px 47px;
   }
 }
 
@@ -49,6 +49,7 @@
 
 .slider__description {
   @media (min-width: $tablet-width) {
+    padding-bottom: 17px;
     max-width: 608px;
   }
 
@@ -93,7 +94,7 @@
   color: $base-dark;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 22px;
+    margin: 0 0 40px;
     font-size: 20px;
     line-height: 1.6;
   }

@@ -1,6 +1,10 @@
 .slider-pagination {
   display: none;
 
+  @media (min-width: $tablet-width) {
+    transform: translateY(-13px);
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 62px);

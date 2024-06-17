@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 80px 20px 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 120px;
+  }
 }
 
 .catalog__container {
@@ -25,6 +29,7 @@
   margin: 0 0 20px;
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 40px;
     grid-column: 1 / -1;
   }
 }
@@ -50,6 +55,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 60px;
     grid-template-columns: repeat(3, 317px);
+  }
+}
+
+.catalog__item {
+  &:nth-child(2) {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   }
 }

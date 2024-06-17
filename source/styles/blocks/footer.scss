@@ -88,13 +88,17 @@
 }
 
 .footer__header {
-  margin: 0 0 12px;
+  margin: 0 0 13px;
   font-family: $font-family;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.42;
   letter-spacing: 0.02em;
   color: $base-primary;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 12px;
+  }
 }
 
 .footer__list {

@@ -67,7 +67,15 @@
 }
 
 .noUi-horizontal .noUi-handle-upper {
-  right: 0;
+  right: -3px;
+
+  @media (min-width: $tablet-width) {
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -6px;
+  }
 }
 
 .noUi-horizontal .noUi-handle-lower {

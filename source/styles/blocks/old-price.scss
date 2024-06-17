@@ -1,13 +1,9 @@
 .old-price {
+  padding-top: 2px;
   display: inline-block;
-  margin-right: 6px;
+  margin-right: 9px;
   font-size: 16px;
   line-height: 2;
   text-decoration: line-through;
   color: $base-primary;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 2px;
-    margin-right: 9px;
-  }
 }

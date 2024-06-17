@@ -10,11 +10,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 222px);
-    gap: 9px 30px;
+    gap: 12px 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
+    gap: 9px 30px;
   }
 }
 
@@ -22,6 +23,10 @@
   padding: 0;
   margin: 0 0 31px;
   border: none;
+
+  &:last-of-type {
+    margin: 0 0 29px;
+  }
 
   @media (min-width: $desktop-width) {
     &:last-of-type {

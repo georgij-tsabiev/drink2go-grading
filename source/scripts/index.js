@@ -52,7 +52,7 @@ if (rangeSlider) {
     step: 1,
     range: {
       'min': [0],
-      'max': [970]
+      'max': [980]
     }
   });
   rangeSlider.noUiSlider.on('update', (currentValues, handleIndex) => {

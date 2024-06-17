@@ -50,6 +50,10 @@
       border: none;
       z-index: initial;
     }
+
+    .nav__link--active {
+      color: $base-dark;
+    }
   }
 }
 

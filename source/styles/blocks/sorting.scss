@@ -56,7 +56,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     .sorting__select {
       background-color: $base-secondary;
     }
@@ -85,5 +85,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 1px 30px 4px 10px;
+  }
+
+  &:focus-visible {
+    background-color: $base-secondary;
   }
 }

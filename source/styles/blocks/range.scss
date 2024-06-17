@@ -7,8 +7,24 @@
 }
 
 .range__fields {
+  position: relative;
   display: flex;
   justify-content: space-between;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $base-light;
+
+    @media (min-width: $desktop-width) {
+      width: 10px;
+    }
+  }
 }
 
 .range__field {

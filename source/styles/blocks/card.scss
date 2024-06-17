@@ -9,6 +9,15 @@
   @media (min-width: $tablet-width) {
     padding: 50px 30px 30px;
   }
+
+  &--special {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &:hover {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s;
+  }
 }
 
 .card__link {

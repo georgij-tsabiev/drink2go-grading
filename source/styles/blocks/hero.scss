@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  background-color: $bg-flat-white;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 188px;
@@ -7,5 +8,18 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+  }
+}
+
+.hero__container {
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
   }
 }

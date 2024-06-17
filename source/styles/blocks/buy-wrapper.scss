@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 10px 0;
 
   @media (min-width: $desktop-width) {
     justify-content: start;

@@ -46,6 +46,8 @@
 }
 
 .slider__description {
+  margin-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     max-width: 608px;
   }

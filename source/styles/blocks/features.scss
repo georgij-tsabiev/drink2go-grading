@@ -2,7 +2,7 @@
   padding: 50px 20px 60px;
 
   @media (min-width: $tablet-width) {
-    padding: 248px 20px 100px;
+    padding: 248px 30px 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,6 +12,10 @@
 
 .features__title {
   margin: 0 0 36px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 60px;
+  }
 }
 
 .features__list {
@@ -50,6 +54,10 @@
 
   &--speed {
     background-image: url("../../icons/stack.svg#speed-icon");
+
+    @media (min-width: $tablet-width) {
+      background-position: left 3px;
+    }
   }
 
   &--convenience {
@@ -62,6 +70,10 @@
 
   &--ecological {
     background-image: url("../../icons/stack.svg#ecological-icon");
+
+    @media (min-width: $tablet-width) {
+      background-position: left 3px;
+    }
   }
 }
 

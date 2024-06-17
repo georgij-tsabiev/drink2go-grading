@@ -1,6 +1,10 @@
 .catalog {
   padding: 50px 20px 44px;
   background-color: $bg-lightest-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 20px 90px;
+  }
 }
 
 .catalog__container {
@@ -25,6 +29,13 @@
   }
 }
 
+.catalog__right-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .catalog__list {
   margin: 0 0 40px;
   display: flex;
@@ -32,9 +43,10 @@
   gap: 21px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 71px;
     display: grid;
     grid-template-columns: 349px 349px;
-    gap: 30px;
+    gap: 29px 30px;
   }
 
   @media (min-width: $desktop-width) {

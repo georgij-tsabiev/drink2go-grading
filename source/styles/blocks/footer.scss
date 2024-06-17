@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 30px;
+    margin: 0;
     padding: 0;
     border-bottom: none;
     grid-column: 1 / -1;
@@ -90,10 +90,6 @@
   line-height: 1.42;
   letter-spacing: 0.02em;
   color: $base-primary;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 20px;
-  }
 }
 
 .footer__list {
@@ -139,6 +135,7 @@
   background-position: left 9px;
 
   @media (min-width: $tablet-width) {
+    padding: 9px 0 0 18px;
     max-width: 160px;
   }
 

@@ -6,6 +6,12 @@
   justify-content: space-between;
   align-items: center;
   gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 25px;
+    align-self: flex-end;
+    gap: 11px;
+  }
 }
 
 .sorting__title {
@@ -31,6 +37,10 @@
     background-image: url("../../icons/stack.svg#select-arrow-icon");
     transform: translateY(-50%);
     pointer-events: none;
+
+    @media (min-width: $tablet-width) {
+      right: 10px;
+    }
   }
 
   &:active {
@@ -68,4 +78,8 @@
   line-height: 1.5;
   color: $base-primary;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 4px 30px 4px 10px;
+  }
 }

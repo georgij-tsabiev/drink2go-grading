@@ -38,7 +38,7 @@
   @media (min-width: $tablet-width) {
     order: 2;
     position: absolute;
-    bottom: -175px;
+    bottom: -197px;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,6 +93,7 @@
   color: $base-dark;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 22px;
     font-size: 20px;
     line-height: 1.6;
   }

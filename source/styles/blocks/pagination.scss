@@ -8,11 +8,12 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pagination__link {
   padding: 8px;
-  width: 40px;
+  min-width: 40px;
   min-height: 40px;
   display: block;
   border-radius: 4px;

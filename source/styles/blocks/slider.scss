@@ -33,6 +33,8 @@
 }
 
 .slider__image-wrapper {
+  margin: 0 0 10px;
+
   @media (min-width: $tablet-width) {
     order: 2;
     position: absolute;
@@ -46,8 +48,6 @@
 }
 
 .slider__description {
-  margin-bottom: 10px;
-
   @media (min-width: $tablet-width) {
     max-width: 608px;
   }

@@ -4,19 +4,25 @@
 
   @media (min-width: $tablet-width) {
     padding: 40px 20px;
-  }
-}
-
-.footer__wrapper {
-  @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0 5px;
+    grid-template-columns: repeat(3, 223px);
+    justify-content: center;
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
+    padding: 40px 40px 76px;
     grid-template-columns: repeat(4, 1fr);
+    gap: 20px 30px;
+  }
+}
+
+.footer__container {
+  margin: 0 auto;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 728px;
   }
 }
 
@@ -36,10 +42,20 @@
 
 .footer__social {
   padding: 0 20px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid $base-secondary;
+
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: $desktop-width) {
+      height: 100%;
+      flex-direction: column;
+      justify-content: start;
+      align-items: normal;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 0 30px;
@@ -49,6 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 25px;
     flex-direction: column;
     grid-column: auto;
     align-items: normal;
@@ -108,9 +125,9 @@
 }
 
 .footer__address {
+  padding: 7px 0 0 19px;
   margin: 0 0 12px;
   display: block;
-  padding-left: 19px;
   font-style: normal;
   font-family: $font-family;
   font-size: 14px;
@@ -119,7 +136,7 @@
   background-image: url("../../icons/stack.svg#address-icon");
   background-repeat: no-repeat;
   background-size: 13px 16px;
-  background-position: top left;
+  background-position: left 9px;
 
   @media (min-width: $tablet-width) {
     max-width: 160px;

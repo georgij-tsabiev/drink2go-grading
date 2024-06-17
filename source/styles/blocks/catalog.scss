@@ -18,6 +18,8 @@
 }
 
 .catalog__title {
+  margin: 0 0 20px;
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
   }
@@ -27,7 +29,7 @@
   margin: 0 0 40px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 21px;
 
   @media (min-width: $tablet-width) {
     display: grid;

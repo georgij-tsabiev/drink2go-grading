@@ -13,17 +13,18 @@ const prevButton = document.querySelector('.slider-button-prev');
 const nextButton = document.querySelector('.slider-button-next');
 const totalSlides = slides.length;
 let currentSlide = 0;
-const showSlide = (index) => {
+const showSlide = (currentSlideIndex) => {
   slides.forEach((slider) => slider.classList.remove('slider__item--current'));
   paginationButtons.forEach((button) => button.classList.remove('slider-pagination__button--current'));
-  slides[index].classList.add('slider__item--current');
-  paginationButtons[index].classList.add('slider-pagination__button--current');
-  prevButton.style.cursor = index === 0 ? 'default' : 'pointer';
-  nextButton.style.cursor = index === totalSlides - 1 ? 'default' : 'pointer';
-  currentSlide = index;
+  slides[currentSlideIndex].classList.add('slider__item--current');
+  paginationButtons[currentSlideIndex].classList.add('slider-pagination__button--current');
+  prevButton.style.cursor = currentSlideIndex === 0 ? 'default' : 'pointer';
+  nextButton.style.cursor = currentSlideIndex === totalSlides - 1 ? 'default' : 'pointer';
+  currentSlide = currentSlideIndex;
 };
-paginationButtons.forEach((button, index) => {
-  button.addEventListener('click', () => showSlide(index));
+paginationButtons.forEach((button, paginationButtonIndex
+) => {
+  button.addEventListener('click', () => showSlide(paginationButtonIndex));
 });
 prevButton.addEventListener('click', () => {
   if (currentSlide > 0) {
@@ -51,16 +52,16 @@ if (rangeSlider) {
     step: 1,
     range: {
       'min': [0],
-      'max': [1000]
+      'max': [970]
     }
   });
-  rangeSlider.noUiSlider.on('update', (values, handle) => {
-    inputs[handle].value = Math.round(values[handle]) || '';
+  rangeSlider.noUiSlider.on('update', (currentValues, handleIndex) => {
+    inputs[handleIndex].value = Math.round(currentValues[handleIndex]) || '';
   });
   const setRangeSlider = (input, value) => {
-    const arr = [null, null];
-    arr[input] = value;
-    rangeSlider.noUiSlider.set(arr);
+    const rangeValues = [null, null];
+    rangeValues[input] = value;
+    rangeSlider.noUiSlider.set(rangeValues);
   };
   inputs.forEach((input, index) => {
     input.addEventListener('change', (event) => {

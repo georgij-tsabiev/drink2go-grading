@@ -1,13 +1,16 @@
 .sorting {
-  padding: 10px 0;
+  margin: 0 0 15px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 5px;
 }
 
 .sorting__title {
   margin: 0;
+  padding-left: 3px;
   font-family: $font-family;
   font-weight: 600;
   font-size: 16px;
@@ -24,7 +27,7 @@
     width: 10px;
     height: 10px;
     top: 50%;
-    right: 10px;
+    right: 7px;
     background-image: url("../../icons/stack.svg#select-arrow-icon");
     transform: translateY(-50%);
     pointer-events: none;
@@ -51,7 +54,7 @@
 }
 
 .sorting__select {
-  padding: 4px 30px 4px 10px;
+  padding: 4px 26px 4px 10px;
   max-width: 165px;
   border-radius: 4px;
   appearance: none;

@@ -10,7 +10,7 @@
 }
 
 .checkbox-list__text {
-  padding-left: 62px;
+  padding-left: 52px;
   position: relative;
   display: inline-block;
   font-family: $font-family;
@@ -81,6 +81,10 @@
 
   &::before {
     background-color: $alt-light-grey;
+  }
+
+  &::after {
+    background-color: $bg-lightest-grey;
   }
 }
 

@@ -1,0 +1,1 @@
+var e=document.querySelector(".nav__menu"),n=document.querySelector(".js-toggle-button"),t=()=>{n.addEventListener("click",()=>{e.classList.toggle("nav__menu--closed"),e.classList.toggle("nav__menu--opened")})};export{t as toggleMobileMenu};

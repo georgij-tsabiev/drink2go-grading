@@ -20,6 +20,7 @@ const showSlide = (index) => {
   paginationButtons[index].classList.add('slider-pagination__button--current');
   prevButton.style.cursor = index === 0 ? 'default' : 'pointer';
   nextButton.style.cursor = index === totalSlides - 1 ? 'default' : 'pointer';
+  currentSlide = index;
 };
 paginationButtons.forEach((button, index) => {
   button.addEventListener('click', () => showSlide(index));

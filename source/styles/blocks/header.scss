@@ -13,12 +13,13 @@
 }
 
 .header__container {
+  margin: 0 auto;
+  max-width: 320px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     max-width: 728px;
   }
 

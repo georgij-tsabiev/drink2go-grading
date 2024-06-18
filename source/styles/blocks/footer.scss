@@ -77,6 +77,18 @@
   padding: 20px;
   border-bottom: 1px solid $base-secondary;
 
+  &:last-of-type {
+    padding: 19px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 10px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     border-bottom: none;
@@ -149,6 +161,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 11px;
     padding: 10px 0 0 20px;
     max-width: none;
     background-position: left 11px;

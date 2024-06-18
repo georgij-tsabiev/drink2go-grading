@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: auto;
-    padding: 30px 105px 58px;
+    padding: 30px 105px 49px;
   }
 }
 
@@ -30,6 +30,10 @@
       flex-direction: row;
       gap: 30px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
   }
 }
 
@@ -63,7 +67,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
-    padding-bottom: 6px;
+    padding-bottom: 15px;
+    transform: translateY(4px);
   }
 }
 

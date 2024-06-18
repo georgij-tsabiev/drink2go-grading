@@ -2,7 +2,7 @@
   display: none;
 
   @media (min-width: $desktop-width) {
-    transform: translateY(-3px);
+    transform: translateY(-11px);
     display: grid;
     grid-template-columns: repeat(3, 62px);
     justify-content: center;

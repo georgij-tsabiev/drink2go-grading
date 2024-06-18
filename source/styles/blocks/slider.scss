@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: auto;
-    padding: 30px 105px 49px;
+    padding: 30px 105px 48px;
   }
 }
 
@@ -43,10 +43,12 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     order: 2;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
     order: initial;
+    z-index: auto;
   }
 }
 

@@ -1,13 +1,27 @@
 .hero {
-  background: $bg-flat-white;
+  background-color: $bg-flat-white;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $bg-flat-white 0%, $bg-flat-white 77.3%, $base-white 77.3%, $base-white 100%);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 188px;
+      bottom: 0;
+      left: 0;
+      background-color: $base-white;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    background: $bg-flat-white;
+    position: static;
+
+    &::after {
+      content: none;
+    }
   }
 }
 

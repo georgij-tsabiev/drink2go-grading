@@ -1,10 +1,10 @@
-const rangeSlider = document.querySelector('.range-slider');
-const inputMin = document.querySelector('.range__field--min');
-const inputMax = document.querySelector('.range__field--max');
-const inputs = [inputMin, inputMax];
+const rangeSliderEl = document.querySelector('.range-slider');
+const inputMinEl = document.querySelector('.range__field--min');
+const inputMaxEl = document.querySelector('.range__field--max');
+const inputsEl = [inputMinEl, inputMaxEl];
 const initializeRangeSlider = () => {
-  if (rangeSlider) {
-    noUiSlider.create(rangeSlider, {
+  if (rangeSliderEl) {
+    noUiSlider.create(rangeSliderEl, {
       start: [0, 900],
       connect: true,
       step: 1,
@@ -13,15 +13,15 @@ const initializeRangeSlider = () => {
         'max': [980]
       }
     });
-    rangeSlider.noUiSlider.on('update', (currentValues, handleIndex) => {
-      inputs[handleIndex].value = Math.round(currentValues[handleIndex]) || '';
+    rangeSliderEl.noUiSlider.on('update', (currentValues, handleIndex) => {
+      inputsEl[handleIndex].value = Math.round(currentValues[handleIndex]) || '';
     });
     const setRangeSlider = (input, value) => {
       const rangeValues = [null, null];
       rangeValues[input] = value;
-      rangeSlider.noUiSlider.set(rangeValues);
+      rangeSliderEl.noUiSlider.set(rangeValues);
     };
-    inputs.forEach((input, index) => {
+    inputsEl.forEach((input, index) => {
       input.addEventListener('change', (event) => {
         setRangeSlider(index, event.currentTarget.value);
       });

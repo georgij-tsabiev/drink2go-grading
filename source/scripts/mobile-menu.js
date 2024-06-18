@@ -1,9 +1,9 @@
-const navMenu = document.querySelector('.nav__menu');
-const navToggle = document.querySelector('.js-toggle-button');
+const navMenuEl = document.querySelector('.nav__menu');
+const navToggleEl = document.querySelector('.js-toggle-button');
 const toggleMobileMenu = () => {
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('nav__menu--closed');
-    navMenu.classList.toggle('nav__menu--opened');
+  navToggleEl.addEventListener('click', () => {
+    navMenuEl.classList.toggle('nav__menu--closed');
+    navMenuEl.classList.toggle('nav__menu--opened');
   });
 };
 

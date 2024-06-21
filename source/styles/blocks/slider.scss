@@ -53,6 +53,8 @@
 }
 
 .slider__image {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     margin-top: 21px;
   }
@@ -63,7 +65,13 @@
 }
 
 .slider__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   @media (min-width: $tablet-width) {
+    display: block;
     max-width: 608px;
   }
 
@@ -84,6 +92,7 @@
 
 .slider__title {
   margin: 0 0 12px;
+  max-width: 280px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.33;
@@ -93,6 +102,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 16px;
+    max-width: none;
     font-size: 56px;
     line-height: 1.42;
   }
@@ -104,12 +114,14 @@
 
 .slider__text {
   margin: 0 0 20px;
+  max-width: 280px;
   font-size: 14px;
   line-height: 1.42;
   text-align: center;
   color: $base-dark;
 
   @media (min-width: $tablet-width) {
+    max-width: none;
     font-size: 20px;
     line-height: 1.6;
   }
